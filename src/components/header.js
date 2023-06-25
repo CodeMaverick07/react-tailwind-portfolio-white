@@ -89,7 +89,7 @@ const Header = ({ dark, darkHandler }) => {
           {menuItems.map((item) => {
             return (
               <li
-                className={`list-none mx-5 px-4 p-1 text-lg hover:border-2 hover:border-black rounded-md ${
+                className={`list-none mx-5 px-4 p-1 text-lg border-2 hover:border-black rounded-md border-white ${
                   item.key === path &&
                   `${
                     dark ? "bg-white text-black" : "bg-theme text-white"
