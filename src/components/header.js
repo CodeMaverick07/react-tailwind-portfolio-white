@@ -30,19 +30,19 @@ const Header = ({ dark, darkHandler }) => {
   return (
     <div
       className={`${
-        dark ? "text-white" : "text-black"
+        dark ? "text-gray-50" : "text-black"
       } fixed top-0 left-0 right-0 z-50`}
     >
       <div
         className={`flex ${
-          dark ? "bg-theme" : "bg-white"
+          dark ? "bg-theme" : "bg-gray-50"
         } justify-between items-center p-2 shadow-2xl ${
           showMenu === "" && "flex-col "
         }`}
       >
         <div className="flex justify-between items-center w-full">
           <Link to="/">
-            <h1 className="text-2xl font-semibold font-mont mx-3  md:mt-0 border-2 rounded-lg border-theme p-2 hover:bg-theme hover:text-white">
+            <h1 className="text-2xl font-semibold font-mont mx-3  md:mt-0 border-2 rounded-lg border-theme p-2 hover:bg-theme hover:text-gray-50">
               Hemant
             </h1>
           </Link>
@@ -50,7 +50,7 @@ const Header = ({ dark, darkHandler }) => {
             <button
               onClick={darkHandler}
               className={` border-2 rounded-md ${
-                dark ? "border-white" : "border-theme"
+                dark ? "border-gray-50" : "border-theme"
               }`}
             >
               {dark ? (
@@ -62,7 +62,7 @@ const Header = ({ dark, darkHandler }) => {
 
             <div
               className={`mx-5 border-2 rounded-md ${
-                dark ? "border-white" : "border-theme"
+                dark ? "border-gray-50" : "border-theme"
               }`}
             >
               <FaBars
@@ -76,7 +76,9 @@ const Header = ({ dark, darkHandler }) => {
         <div className="flex md:hidden">
           <button
             className={`mr-5 border-2 ${
-              dark ? "border-white" : "border-black"
+              dark
+                ? "border-gray-50 hover:border-theme "
+                : "border-gray-50 hover:border-black md:border-theme"
             } rounded-md`}
             onClick={darkHandler}
           >
@@ -89,10 +91,10 @@ const Header = ({ dark, darkHandler }) => {
           {menuItems.map((item) => {
             return (
               <li
-                className={`list-none mx-5 px-4 p-1 text-lg border-2 hover:border-black rounded-md border-white ${
+                className={`list-none mx-5 px-4 p-1 text-lg border-2 hover:border-black rounded-md border-gray-50  ${
                   item.key === path &&
                   `${
-                    dark ? "bg-white text-black" : "bg-theme text-white"
+                    dark ? "bg-gray-50 text-black" : "bg-theme text-gray-50"
                   }  rounded-md `
                 }`}
               >
@@ -112,8 +114,8 @@ const Header = ({ dark, darkHandler }) => {
                   item.key === path &&
                   `${
                     dark
-                      ? "bg-white text-black rounded-md mx-8 px-5"
-                      : "bg-theme text-white rounded-md mx-8 px-5"
+                      ? "bg-gray-50 text-black rounded-md mx-8 px-5"
+                      : "bg-theme text-gray-50 rounded-md mx-8 px-5"
                   } `
                 }`}
               >
