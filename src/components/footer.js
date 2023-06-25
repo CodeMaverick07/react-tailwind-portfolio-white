@@ -1,7 +1,7 @@
 import React from "react";
 import {
   FaInstagram,
-  FaLinkedin,
+  FaWhatsapp,
   FaMailBulk,
   FaGithub,
   FaPhoneAlt,
@@ -49,8 +49,12 @@ function Footer() {
               >
                 <FaMailBulk className="text-black " />
               </a>
+                               <a  target="_blank"
+                rel="noreferrer"
+                  href="https://wa.me/+919130921658"
+                  >
 
-              <FaLinkedin className="text-black " />
+              <FaWhatsapp className="text-black " /></a>
             </div>
             <div className="h-1 border-2 border-dotted border-black "></div>
 
