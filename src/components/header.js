@@ -78,7 +78,7 @@ const Header = ({ dark, darkHandler }) => {
             className={`mr-5 border-2 ${
               dark
                 ? "border-gray-50 hover:border-theme "
-                : "border-gray-50 hover:border-black md:border-theme"
+                : "border-black md:border-theme"
             } rounded-md`}
             onClick={darkHandler}
           >
