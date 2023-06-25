@@ -37,8 +37,8 @@ const Projects = () => {
       </div>
       <div>
         <div className="mx-96 md:mx-0">
-          <div className="bg-gray-200 rounded-lg p-5 w-60 mx-60 mt-10 md:mx-14 ">
-            <h1 className="text-center text-5xl">Projects</h1>
+          <div className="bg-gray-200 rounded-lg p-5 w-60 mx-60 mt-10 md:mx-14 shadow-2xl">
+            <h1 className="text-center text-5xl ">Projects</h1>
           </div>
         </div>
         <div className="grid mt-10 md:grid-cols-1 grid-cols-3 items-center justify-center rounded-2xl">
@@ -50,7 +50,7 @@ const Projects = () => {
                     <img
                       src={project.image}
                       alt="hemant"
-                      className="w-100 h-60 md:h-40 rounded-lg "
+                      className="w-100 h-60 md:h-40 rounded-lg shadow-2xl "
                     />
                     <div className=" text-white absolute inset-0 items-center justify-center flex flex-col opacity-0 bg-black hover:opacity-80 rounded-xl ">
                       <h1 className=" text-3xl font-bold text-center md:text-2xl  rounded  p-3 ">
@@ -63,7 +63,10 @@ const Projects = () => {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <FaLink className="border-2 rounded border-gray-500 text-gray-500 p-3 hover:border-white hover:text-white" />
+                          <FaLink
+                            className="border-2 rounded border-gray-500
+                           text-gray-500 p-3 hover:border-white hover:text-white "
+                          />
                         </a>
                         <a
                           className="mx-5"
@@ -71,7 +74,10 @@ const Projects = () => {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <FaGithub className="border-2 rounded border-gray-500 text-gray-500 p-3 hover:border-white hover:text-white" />
+                          <FaGithub
+                            className="border-2 rounded border-gray-500 
+                          text-gray-500 p-3 hover:border-white hover:text-white "
+                          />
                         </a>
                       </div>
                     </div>
