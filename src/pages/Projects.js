@@ -63,7 +63,7 @@ const Projects = () => {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <FaLink className="border-2 rounded border-white p-3" />
+                          <FaLink className="border-2 rounded border-gray-500 text-gray-500 p-3 hover:border-white hover:text-white" />
                         </a>
                         <a
                           className="mx-5"
@@ -71,7 +71,7 @@ const Projects = () => {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <FaGithub className="border-2 rounded border-white p-3" />
+                          <FaGithub className="border-2 rounded border-gray-500 text-gray-500 p-3 hover:border-white hover:text-white" />
                         </a>
                       </div>
                     </div>
