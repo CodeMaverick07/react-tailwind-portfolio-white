@@ -1,5 +1,12 @@
 const projectData = [
   {
+    title: "Travling_Histroy_Saver",
+    image: "./wallpaper1.jpg",
+    description: "save your all Travling_Histroy ",
+    link: "https://travling-histroy-saver-hemantjatal.vercel.app/",
+    git: "https://github.com/TomatoTwister/travling_histroy_saver",
+  },
+  {
     title: "Food-Ordering-App",
     image: "./meals.png",
     description: "Used Lot of Hooks in it",
@@ -54,13 +61,6 @@ const projectData = [
     description: "It look nice",
     link: "https://tomatotwister.github.io/Rotating-navigation/",
     git: "https://github.com/TomatoTwister/Rotating-navigation.git",
-  },
-  {
-    title: "wallpaper",
-    image: "./wallpaper.jpg",
-    description: "It look nice",
-    link: "https://tomatotwister.github.io/Rotating-navigation/",
-    git: "https://tomatotwister.github.io/Rotating-navigation/",
   },
 ];
 
